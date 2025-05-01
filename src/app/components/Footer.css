@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer nav a:hover {
+  color: #0056b3;
+}
