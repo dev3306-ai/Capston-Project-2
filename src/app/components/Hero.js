@@ -1,13 +1,15 @@
+import React from "react";
 import "../styles/Hero.css";
+
 export default function Hero() {
-    return (
-      <main className="hero">
-        <h1>Welcome to EduVerse</h1>
-        <p>Explore subjects, take lessons, attempt quizzes, and track your progress.</p>
-        <div className="cta-buttons">
-          <a href="/subjects" className="btn-primary">Start Learning</a>
-          <a href="/auth" className="btn-secondary">Sign Up</a>
-        </div>
-      </main>
-    );
-  }
+  return (
+    <header className="hero">
+      <h1>Welcome to EduVerse</h1>
+      <p>Your gateway to interactive learning.</p>
+      <div className="hero-buttons">
+        <a href="/subjects" className="cta-button">Start Learning</a>
+        <a href="/auth" className="cta-button secondary">Sign Up</a>
+      </div>
+    </header>
+  );
+}

@@ -2,29 +2,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
+  padding: 15px 30px;
+  background-color: #0047ab; /* Modern blue color */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
 }
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .nav-links a {
+  color: white;
   text-decoration: none;
-  color: #007bff;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .nav-links a:hover {
-  color: #0056b3;
+  color: #ffcc00; /* Highlight color for hover */
+}
+
+/* Responsive Navbar */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  justify-content: center; /* Center links on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px; /* Reduce gap for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on mobile */
+    gap: 10px;
+  }
 }
