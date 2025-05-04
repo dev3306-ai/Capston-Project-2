@@ -1,11 +1,11 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+  min-height: 100vh;
 }
 
 .subjects-container {
-  flex: 1; /* Pushes the footer to the bottom by taking up available space */
+  flex: 1;
   padding: 20px;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProgressChart from "../components/ProgressChart";
@@ -19,7 +19,14 @@ const quizScores = [
 ];
 
 export default function DashboardPage() {
-  const [progress, setProgress] = useState(60); // Example progress percentage
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const totalQuizzes = quizScores.length;
+    const completedQuizzes = quizScores.filter((quiz) => quiz.score > 0).length;
+    const calculatedProgress = Math.round((completedQuizzes / totalQuizzes) * 100);
+    setProgress(calculatedProgress);
+  }, [quizScores]);
 
   return (
     <div className="page-container">

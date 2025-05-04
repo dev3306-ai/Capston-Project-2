@@ -1,18 +1,27 @@
 .dashboard-container {
   padding: 20px;
   flex: 1; /* Push footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
 }
 
 .dashboard-title {
   text-align: center;
   color: #0047ab;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
-.progress-section,
+.progress-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .completed-section,
 .quiz-section {
+  width: 100%;
+  max-width: 600px;
   margin-bottom: 30px;
 }
 

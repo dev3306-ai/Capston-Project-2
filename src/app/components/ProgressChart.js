@@ -6,7 +6,7 @@ export default function ProgressChart({ progress }) {
     height: "150px",
     borderRadius: "50%",
     border: "10px solid #0047ab",
-    borderTop: `10px solid ${progress >= 100 ? "#00c853" : "#ffcc00"}`, // Green if 100%, yellow otherwise
+    borderTop: `10px solid ${progress >= 100 ? "#00c853" : "#ffcc00"}`,
     transform: `rotate(${(progress / 100) * 360}deg)`,
     transition: "transform 0.3s ease",
   };
