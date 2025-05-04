@@ -30,14 +30,6 @@
   color: #ffcc00; /* Highlight color for hover */
 }
 
-/* Responsive Navbar */
-.nav-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap; /* Wrap links on smaller screens */
-  justify-content: center; /* Center links on smaller screens */
-}
-
 @media (max-width: 768px) {
   .nav-links {
     gap: 15px; /* Reduce gap for tablets */

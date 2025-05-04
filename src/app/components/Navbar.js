@@ -5,6 +5,7 @@ export default function Navbar() {
     <header className="navbar">
       <h1 className="logo">EduVerse</h1>
       <nav className="nav-links">
+        <a href="/">Home</a> {/* Link to Home Page */}
         <a href="/subjects">Subjects</a>
         <a href="/dashboard">Dashboard</a>
         <a href="/auth">Login</a>
