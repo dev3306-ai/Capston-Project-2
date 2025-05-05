@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProgressChart from "../components/ProgressChart";
 import "../styles/Dashboard.css";
 
 const completedLessons = [
@@ -19,24 +18,11 @@ const quizScores = [
 ];
 
 export default function DashboardPage() {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const totalQuizzes = quizScores.length;
-    const completedQuizzes = quizScores.filter((quiz) => quiz.score > 0).length;
-    const calculatedProgress = Math.round((completedQuizzes / totalQuizzes) * 100);
-    setProgress(calculatedProgress);
-  }, [quizScores]);
-
   return (
     <div className="page-container">
       <Navbar />
       <div className="dashboard-container">
         <h1 className="dashboard-title">Dashboard</h1>
-        <div className="progress-section">
-          <h2>Your Progress</h2>
-          <ProgressChart progress={progress} />
-        </div>
         <div className="completed-section">
           <h2>Completed Lessons</h2>
           <ul className="completed-list">

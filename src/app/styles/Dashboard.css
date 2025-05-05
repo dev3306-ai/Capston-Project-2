@@ -1,9 +1,15 @@
-.dashboard-container {
-  padding: 20px;
-  flex: 1; /* Push footer to the bottom */
+.page-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align content */
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dashboard-title {
@@ -11,11 +17,6 @@
   color: #0047ab;
   font-size: 2.5rem;
   margin-bottom: 30px;
-}
-
-.progress-section {
-  margin-bottom: 40px;
-  text-align: center;
 }
 
 .completed-section,
@@ -43,4 +44,10 @@
 .completed-list li:hover,
 .quiz-list li:hover {
   background-color: #e6f0ff;
+}
+
+h2 {
+  color: #0047ab;
+  margin-bottom: 15px;
+  text-align: center;
 }

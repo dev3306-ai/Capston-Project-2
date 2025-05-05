@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f0f8ff; /* Light blue background */
+  background-color: #f0f8ff;
   padding: 50px 20px;
-  min-height: 60vh; /* Ensures it takes up a good portion of the screen */
+  min-height: 60vh;
 }
 
 .hero h1 {
@@ -24,9 +24,9 @@
 
 .hero-buttons {
   display: flex;
-  gap: 20px; /* Adds spacing between buttons */
-  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
-  justify-content: center; /* Centers buttons on smaller screens */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cta-button {
@@ -48,41 +48,40 @@
 }
 
 .cta-button.secondary {
-  background-color: #ffcc00; /* Yellow for the secondary button */
+  background-color: #ffcc00;
   color: #0047ab;
 }
 
 .cta-button.secondary:hover {
-  background-color: #e6b800; /* Darker yellow on hover */
+  background-color: #e6b800;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem; /* Adjust heading size for tablets */
+    font-size: 2.5rem;
   }
 
   .hero p {
-    font-size: 1.2rem; /* Adjust paragraph size for tablets */
+    font-size: 1.2rem;
   }
 
   .cta-button {
-    padding: 12px 25px; /* Reduce button padding for smaller screens */
+    padding: 12px 25px;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2rem; /* Adjust heading size for mobile */
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 1rem; /* Adjust paragraph size for mobile */
+    font-size: 1rem;
   }
 
   .cta-button {
-    padding: 10px 20px; /* Further reduce button padding for mobile */
+    padding: 10px 20px;
     font-size: 0.9rem;
   }
 }
