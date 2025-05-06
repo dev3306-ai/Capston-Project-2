@@ -29,15 +29,3 @@
 .nav-links a:hover {
   color: #ffcc00;
 }
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-}

@@ -44,23 +44,3 @@
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .feature img {
-    max-width: 70px; /* Adjust image size for tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature img {
-    max-width: 60px; /* Adjust image size for mobile */
-  }
-}
