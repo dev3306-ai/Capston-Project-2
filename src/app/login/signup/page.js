@@ -58,7 +58,9 @@ export default function SignupPage() {
               required
             />
           </div>
-          <button type="submit" className="login-button">Sign Up</button>
+          <button type="submit" className="login-button">
+            Sign Up
+          </button>
         </form>
         <p className="login-footer">
           Already have an account? <a href="/login">Login</a>

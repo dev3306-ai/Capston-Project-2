@@ -7,9 +7,78 @@ import SubjectCard from "../components/SubjectCard";
 import "../styles/Subjects.css";
 
 const subjectsData = [
-  { id: 1, name: "Mathematics", description: "Master Mathematics with clear concepts, step-by-step problem solving, and interactive practice — from basic arithmetic to advanced algebra and geometry." },
-  { id: 2, name: "Physics", description: "Explore the fascinating world of Physics — from motion and energy to electricity and the universe. Learn concepts through interactive lessons, real-world examples, and engaging quizzes." },
-  { id: 3, name: "Chemistry", description: "Dive into the world of Chemistry — understand atoms, reactions, and the periodic table with easy explanations, experiments, and real-life applications." },
+  {
+    id: 1,
+    name: "Mathematics",
+    description:
+      "Master Mathematics with clear concepts, step-by-step problem solving, and interactive practice — from basic arithmetic to advanced algebra and geometry.",
+  },
+  {
+    id: 2,
+    name: "Physics",
+    description:
+      "Explore the fascinating world of Physics — from motion and energy to electricity and the universe. Learn concepts through interactive lessons, real-world examples, and engaging quizzes.",
+  },
+  {
+    id: 3,
+    name: "Chemistry",
+    description:
+      "Dive into the world of Chemistry — understand atoms, reactions, and the periodic table with easy explanations, experiments, and real-life applications.",
+  },
+  {
+    id: 4,
+    name: "Biology",
+    description:
+      "Discover the wonders of life sciences, from cells to ecosystems, and understand how living organisms interact with their environment.",
+  },
+  {
+    id: 5,
+    name: "History",
+    description:
+      "Dive into the past and learn about historical events, civilizations, and the people who shaped the world.",
+  },
+  {
+    id: 6,
+    name: "Geography",
+    description:
+      "Understand the physical features of the Earth, its climate, and how humans interact with their environment.",
+  },
+  {
+    id: 7,
+    name: "Computer Science",
+    description:
+      "Learn programming, algorithms, and the fundamentals of computer systems and software development.",
+  },
+  {
+    id: 8,
+    name: "Economics",
+    description:
+      "Explore the principles of economics, including supply and demand, markets, and global trade.",
+  },
+  {
+    id: 9,
+    name: "Art",
+    description:
+      "Unleash your creativity by learning about various art forms, techniques, and the history of art.",
+  },
+  {
+    id: 10,
+    name: "Music",
+    description:
+      "Discover the world of music, from theory and composition to instruments and famous composers.",
+  },
+  {
+    id: 11,
+    name: "Philosophy",
+    description:
+      "Engage with the big questions of life, ethics, and existence through the study of philosophy.",
+  },
+  {
+    id: 12,
+    name: "Psychology",
+    description:
+      "Understand the human mind and behavior through the study of psychology and mental processes.",
+  },
 ];
 
 export default function SubjectsPage() {
