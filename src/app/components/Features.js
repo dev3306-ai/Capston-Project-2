@@ -1,12 +1,8 @@
-import '../styles/Features.css';
+import "../styles/Features.css";
 
 export default function Features() {
   return (
     <section className="features">
-      <div className="feature">
-        <h3>Interactive Lessons</h3>
-        <p>Learn through engaging and interactive content.</p>
-      </div>
       <div className="feature">
         <h3>Quizzes</h3>
         <p>Test your knowledge with fun quizzes.</p>

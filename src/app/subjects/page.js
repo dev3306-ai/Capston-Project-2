@@ -61,24 +61,6 @@ const subjectsData = [
     description:
       "Unleash your creativity by learning about various art forms, techniques, and the history of art.",
   },
-  {
-    id: 10,
-    name: "Music",
-    description:
-      "Discover the world of music, from theory and composition to instruments and famous composers.",
-  },
-  {
-    id: 11,
-    name: "Philosophy",
-    description:
-      "Engage with the big questions of life, ethics, and existence through the study of philosophy.",
-  },
-  {
-    id: 12,
-    name: "Psychology",
-    description:
-      "Understand the human mind and behavior through the study of psychology and mental processes.",
-  },
 ];
 
 export default function SubjectsPage() {

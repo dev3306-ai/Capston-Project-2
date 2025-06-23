@@ -1,0 +1,68 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.lessons-quizzes-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lessons-quizzes-container h1 {
+  font-size: 2.5rem;
+  color: #0047ab;
+  margin-bottom: 20px;
+}
+
+.lessons-quizzes-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.lessons-section,
+.quizzes-section {
+  margin-bottom: 30px;
+}
+
+.lessons-section h2,
+.quizzes-section h2 {
+  font-size: 1.8rem;
+  color: #0047ab;
+  margin-bottom: 15px;
+}
+
+.lessons-section ul,
+.quizzes-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lessons-section li,
+.quizzes-section li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.lessons-section li:hover,
+.quizzes-section li:hover {
+  background-color: #e6f0ff;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: auto;
+}
