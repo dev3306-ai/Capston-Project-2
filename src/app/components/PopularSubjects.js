@@ -13,7 +13,6 @@ const subjects = [
     name: "Chemistry",
     description: "Dive into the world of atoms and molecules.",
   },
-  { id: 4, name: "Biology", description: "Understand the science of life." },
 ];
 
 export default function PopularSubjects() {
@@ -25,7 +24,7 @@ export default function PopularSubjects() {
           <div key={subject.id} className="subject-card">
             <h3>{subject.name}</h3>
             <p>{subject.description}</p>
-            <Link href={`/subjects/${subject.id}`}>
+            <Link href={`/subjects/${subject.id}/lessons`}>
               <button className="explore-button">Explore</button>
             </Link>
           </div>

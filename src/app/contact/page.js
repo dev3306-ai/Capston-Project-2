@@ -18,6 +18,33 @@ export default function ContactPage() {
           <li>Phone: +91 89834 06021</li>
           <li>Address: 12 Lane, Sector 25, Gurugram, Haryana</li>
         </ul>
+        <div className="contact-form">
+          <h2>Get in Touch</h2>
+          <form>
+            <div className="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="message"
+                placeholder="Your Message"
+                required
+              />
+            </div>
+            <button type="submit" className="submit-button">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
       <Footer />
     </div>

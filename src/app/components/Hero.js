@@ -10,9 +10,6 @@ export default function Hero() {
         <a href="/subjects" className="cta-button">
           Start Learning
         </a>
-        <a href="/login" className="cta-button secondary">
-          Sign Up
-        </a>
       </div>
     </header>
   );

@@ -1,40 +1,22 @@
 .subject-card {
-  background-color: #ffffff;
+  background-color: #f0f8ff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.subject-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.subject-card h3 {
-  font-size: 1.5rem;
-  color: #0047ab;
-  margin-bottom: 10px;
-}
-
-.subject-card p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.explore-button {
+.subject-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
   background-color: #0047ab;
   color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.explore-button:hover {
+.subject-link:hover {
   background-color: #003580;
 }

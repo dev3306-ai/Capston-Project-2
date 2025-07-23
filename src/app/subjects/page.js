@@ -29,37 +29,19 @@ const subjectsData = [
     id: 4,
     name: "Biology",
     description:
-      "Discover the wonders of life sciences, from cells to ecosystems, and understand how living organisms interact with their environment.",
+      "Discover the wonders of Biology — from cells and genetics to ecosystems and evolution. Learn through engaging lessons and interactive activities.",
   },
   {
     id: 5,
     name: "History",
     description:
-      "Dive into the past and learn about historical events, civilizations, and the people who shaped the world.",
+      "Travel through time with History — explore ancient civilizations, world wars, and cultural revolutions. Gain insights into the events that shaped our world.",
   },
   {
     id: 6,
     name: "Geography",
     description:
-      "Understand the physical features of the Earth, its climate, and how humans interact with their environment.",
-  },
-  {
-    id: 7,
-    name: "Computer Science",
-    description:
-      "Learn programming, algorithms, and the fundamentals of computer systems and software development.",
-  },
-  {
-    id: 8,
-    name: "Economics",
-    description:
-      "Explore the principles of economics, including supply and demand, markets, and global trade.",
-  },
-  {
-    id: 9,
-    name: "Art",
-    description:
-      "Unleash your creativity by learning about various art forms, techniques, and the history of art.",
+      "Understand the world with Geography — learn about physical landscapes, human geography, and global environmental challenges.",
   },
 ];
 
@@ -74,7 +56,10 @@ export default function SubjectsPage() {
     <div className="page-container">
       <Navbar />
       <div className="subjects-container">
-        <h1 className="subjects-title">Subjects</h1>
+        <h1 className="subjects-title">Explore Subjects</h1>
+        <p className="subjects-description">
+          Find interactive lessons and resources for your favorite subjects.
+        </p>
         <input
           type="text"
           placeholder="Search subjects..."

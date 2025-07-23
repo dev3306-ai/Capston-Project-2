@@ -1,31 +1,126 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 30px;
   background-color: #0047ab;
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo {
+.navbar-logo a {
   font-size: 1.8rem;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
-.nav-links {
+.navbar-links {
   display: flex;
   gap: 20px;
 }
 
-.nav-links a {
+.navbar-links a {
+  font-size: 1rem;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.navbar-links a:hover {
   color: #ffcc00;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #0047ab;
+}
+
+.signup-button {
+  background-color: #ffcc00;
+  color: #0047ab;
+}
+
+.signup-button:hover {
+  background-color: #e6b800;
+}
+
+.navbar-hamburger {
+  display: none;
+}
+
+.hamburger-button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links,
+  .navbar-actions {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #0047ab;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.active,
+  .navbar-actions.active {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.9rem;
+  }
+
+  .navbar-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .hamburger-button {
+    font-size: 1.2rem;
+  }
 }

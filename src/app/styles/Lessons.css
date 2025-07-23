@@ -1,0 +1,91 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.lessons-container {
+  padding: 40px 20px;
+}
+
+.lessons-title {
+  font-size: 2.5rem;
+  color: #0047ab;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.lesson-card {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.lesson-card h2 {
+  font-size: 1.5rem;
+  color: #0047ab;
+  margin-bottom: 10px;
+}
+
+.lesson-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.lesson-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .lessons-title {
+    font-size: 2rem;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .lesson-card p {
+    font-size: 0.9rem;
+  }
+
+  .lesson-card iframe {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lessons-title {
+    font-size: 1.8rem;
+  }
+
+  .lesson-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .lesson-card p {
+    font-size: 0.8rem;
+  }
+
+  .lesson-card iframe {
+    height: 120px;
+  }
+}
+.footer {
+  background-color: #0047ab;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}

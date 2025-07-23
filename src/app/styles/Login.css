@@ -36,7 +36,7 @@
 }
 
 .form-group input {
-  width: 100%;
+  width: 94%;
   padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -82,4 +82,55 @@
 
 .login-footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .login-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .login-footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .login-form {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .form-group input {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .login-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .login-footer {
+    font-size: 0.7rem;
+  }
 }
