@@ -15,13 +15,13 @@ export default function Navbar() {
       <div className="navbar-logo">
         <a href="/">EduVerse</a>
       </div>
-      <div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
+      <div className="navbar-links">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <a href="/subjects">Subjects</a>
       </div>
-      <div className={`navbar-actions ${isMenuOpen ? "active" : ""}`}>
+      <div className="navbar-actions">
         <a href="/login" className="navbar-button login-button">
           Login
         </a>
